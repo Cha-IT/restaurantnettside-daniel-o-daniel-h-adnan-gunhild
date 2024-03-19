@@ -5,7 +5,8 @@
             "matName": "pizza",
             "matPris": 499,
             "matBilde": "./Bilder/pizza.jpg",
-            "matDescription": "pizza er en mat rett fra pizza land"
+            "matDescription": "pizza er en mat rett fra pizza land",
+            "matAlergi": "Gluten, laktose, "
         }
     ]
 }
