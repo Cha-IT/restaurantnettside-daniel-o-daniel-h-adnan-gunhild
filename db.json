@@ -1,0 +1,10 @@
+{
+    "meny": [
+        {
+            "menyId": 1,
+            "menyName": "pizza",
+            "menyPris": 499,
+            "menyBilde": ""
+        }
+    ]
+}
