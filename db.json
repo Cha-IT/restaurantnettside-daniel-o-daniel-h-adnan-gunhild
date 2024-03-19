@@ -1,10 +1,11 @@
 {
-    "meny": [
+    "mat": [
         {
-            "menyId": 1,
-            "menyName": "pizza",
-            "menyPris": 499,
-            "menyBilde": ""
+            "matId": 1,
+            "matName": "pizza",
+            "matPris": 499,
+            "matBilde": "./Bilder/pizza.jpg",
+            "matDescription": "pizza er en mat rett fra pizza land"
         }
     ]
 }
