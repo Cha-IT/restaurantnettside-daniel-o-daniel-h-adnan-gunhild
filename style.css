@@ -13,13 +13,10 @@ body {
     margin: auto;
 }
 .banner-ul {
-    display: grid;
-    grid-template-columns: 1fr;
     list-style: none;
-    text-align: center;
-    padding: 0px;
 }
 .banner-li { 
+    display: inline-block;
     padding: 12px;
     color: white;
 }
