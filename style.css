@@ -13,6 +13,8 @@ body {
     margin: auto;
 }
 .banner-ul {
+    display: flex;
+    justify-content: center;
     list-style: none;
 }
 .banner-li { 
