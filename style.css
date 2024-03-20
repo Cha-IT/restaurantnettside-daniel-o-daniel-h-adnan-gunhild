@@ -2,8 +2,26 @@ body {
     margin: 0px;
     font-family: "M PLUS Rounded 1c", sans-serif;
 }
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px
+}
+li {
+    list-style: none;  
+    float: left;
+    margin: 0px;
+    padding: 12px;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+li:hover {
+    background-color: #19ad90;
+}
 .banner {
-    padding: 1.7rem;
+    padding: 100px;
     text-align: center;
     background: #1abc9c;
     color: white;
