@@ -1,6 +1,13 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0px;
     font-family: "M PLUS Rounded 1c", sans-serif;
+}
+a {
+    text-decoration: none;
+    color: white;
 }
 .banner {
     padding: 6px;
