@@ -14,7 +14,9 @@ function handelTakeaway() {
     console.log("Du prøver å bestile takewway.")
 }
 
+
 listItem1.onclick = handelMeny;
 listItem2.onclick = handelBordbestiling;
 listItem3.onclick = handelTakeaway;
 
+window.location.replace("#");
