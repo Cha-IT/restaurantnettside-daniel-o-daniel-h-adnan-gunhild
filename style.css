@@ -1,5 +1,7 @@
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 body {
     margin: 0px;
@@ -10,9 +12,12 @@ a {
     color: white;
 }
 .banner {
+    display: block;
+    position: static;
+    width: 100%;
+    height: auto;
     padding: 6px;
     background: #593C2C;
-    font-size: 30px;
     
 }
 .banner-flex{
@@ -23,9 +28,11 @@ a {
     display: flex;
     justify-content: center;
     list-style: none;
+    margin: 0px;
 }
 .banner-li { 
     display: inline-block;
+    font-size: 2em;
     padding: 12px;
     color: white;
 }
