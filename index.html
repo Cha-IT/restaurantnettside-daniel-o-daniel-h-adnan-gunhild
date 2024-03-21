@@ -108,5 +108,77 @@
     
 
     <script src="script.js"></script>
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    form {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    select, input[type="number"], input[type="text"], input[type="email"], textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    textarea {
+      resize: vertical;
+      height: 100px;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <form action="/handle_order" method="post">
+    <h1>Order Form</h1>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <label for="dish">Select dish:</label>
+    <select id="dish" name="dish">
+      <option value="grilled_shrimp">Grilled shrimp with garlic butter</option>
+      <option value="steak_pepper_sauce">Steak with pepper sauce</option>
+      <option value="vanilla_ice_cream">Vanilla ice cream with berries</option>
+    </select>
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+    <label for="comments">Comments (optional):</label>
+    <textarea id="comments" name="comments"></textarea>
+    <input type="submit" value="Add to Cart">
+  </form>
+</body>
+</html>
+
 </body>
 </html>
