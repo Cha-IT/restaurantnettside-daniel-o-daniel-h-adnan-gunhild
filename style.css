@@ -41,6 +41,8 @@ a {
 .flex-div{
     text-align: center;
     margin: auto;
+    margin-top: 0.5px;
+    margin-left: 80px ;
 }
 .banner-bilde{
     cursor: pointer;
@@ -52,6 +54,8 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-right: 60px;
+    margin-top: 50px;
     
 }
 .åpnigstider-ul{
@@ -69,3 +73,5 @@ a {
 .åpnigstider-li{
     margin-bottom: 16px;
 }
+
+
