@@ -1,9 +1,12 @@
 let listItem1 = document.querySelector("#liItem1");
 let listItem2 = document.querySelector("#liItem2");
 let listItem3 = document.querySelector("#liItem3");
+let menyElement = document.querySelector("#container");
+let orderFormElement = document.querySelector("#orederForm");
 
 function handelMeny() {
     console.log("Du prøver å se på menyen vår")
+    menyElement.style.display= 'block'
 }
 
 function handelBordbestiling() {
@@ -12,6 +15,7 @@ function handelBordbestiling() {
 
 function handelTakeaway() {
     console.log("Du prøver å bestile takewway.")
+    orderFormElement.style.display = 'block'
 }
 
 

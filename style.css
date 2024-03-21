@@ -6,10 +6,46 @@ html {
 body {
     margin: 0px;
     font-family: "M PLUS Rounded 1c", sans-serif;
+    margin-bottom: 100px;
 }
 a {
     text-decoration: none;
     color: white;
+}
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+select, input[type="number"], input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+input[type="submit"] {
+    background-color: #593C2C;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #442e22;
 }
 .banner {
     display: block;
@@ -80,5 +116,42 @@ a {
 .åpnigstider-li{
     margin-bottom: 16px;
 }
+.container {
+    display: none;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
+h1 {
+    text-align: center;
+    color: #333;
+}
+.menu-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+.menu-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+.menu-item h2 {
+    margin: 0;
+    color: #333;
+}
+.menu-item p {
+    margin: 5px 0;
+    color: #666;
+}
+.price {
+    font-weight: bold;
+    color: #007bff;
+}
+.order-form {
+    display: none;
+}
 
