@@ -38,7 +38,7 @@ function handelMeny() {
     console.log("Du prøver å se på menyen vår")
     menyElement.style.display= 'block'
     
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < data.mat.length; i++) {
         console.log(data.mat[i].matName)
         let div = document.createElement("div");
         div.classList.add("menu-item")
