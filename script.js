@@ -63,8 +63,10 @@ function handelMeny() {
 
             let addBtn = document.createElement("button")
             addBtn.classList.add("add-button")
+            addBtn.classList.add("iwwa--add")
             let removeBtn = document.createElement("button")
             removeBtn.classList.add("remove-button")
+            removeBtn.classList.add("iwwa--minus")
 
             div.appendChild(overskrift);
             div.appendChild(text);
