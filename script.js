@@ -52,7 +52,7 @@ function handelMeny() {
         text.appendChild(textData);
 
         let price = document.createElement("p");
-        let priceData = document.createTextNode(data.mat[i].matPris);
+        let priceData = document.createTextNode(`${data.mat[i].matPris} kr`);
         price.appendChild(priceData);
         price.classList.add("price")
 
