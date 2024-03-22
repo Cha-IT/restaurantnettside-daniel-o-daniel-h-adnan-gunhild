@@ -161,10 +161,20 @@ h1 {
     display: none;
 }
 .add-button{
-    background-color: green;
+    background-color: #DCFFB7;
+
+}
+.add-button:hover{
+    background-color: lightgreen;
+    cursor: pointer;
 
 }
 .remove-button{
+    background-color: #FF6868;
+
+}
+.remove-button:hover{
     background-color: red;
+    cursor: pointer;
 
 }
