@@ -36,31 +36,46 @@ let divMenyContainer = document.querySelector("#container")
 
 function handelMeny() {
     console.log("Du prøver å se på menyen vår")
-    menyElement.style.display= 'block'
     
-    for (let i = 0; i < data.mat.length; i++) {
-        console.log(data.mat[i].matName)
-        let div = document.createElement("div");
-        div.classList.add("menu-item")
+    
+    if (menyElement.style.display == 'block') {
+        return
+    } else {
+        menyElement.style.display = 'block'
+        for (let i = 0; i < data.mat.length; i++) {
+            console.log(data.mat[i].matName)
+            let div = document.createElement("div");
+            div.classList.add("menu-item")
 
-        let overskrift = document.createElement("h2");
-        let overskriftData = document.createTextNode(data.mat[i].matName);
-        overskrift.appendChild(overskriftData);
+            let btnDivColector = document.createElement("div")
+            let overskrift = document.createElement("h2");
+            let overskriftData = document.createTextNode(data.mat[i].matName);
+            overskrift.appendChild(overskriftData);
 
-        let text = document.createElement("p");
-        let textData = document.createTextNode(data.mat[i].matDescription);
-        text.appendChild(textData);
+            let text = document.createElement("p");
+            let textData = document.createTextNode(data.mat[i].matDescription);
+            text.appendChild(textData);
 
-        let price = document.createElement("p");
-        let priceData = document.createTextNode(`${data.mat[i].matPris} kr`);
-        price.appendChild(priceData);
-        price.classList.add("price")
+            let price = document.createElement("p");
+            let priceData = document.createTextNode(`${data.mat[i].matPris} kr`);
+            price.appendChild(priceData);
+            price.classList.add("price");
 
-        div.appendChild(overskrift);
-        div.appendChild(text);
-        div.appendChild(price);
+            let addBtn = document.createElement("button")
+            addBtn.classList.add("add-button")
+            let removeBtn = document.createElement("button")
+            removeBtn.classList.add("remove-button")
 
-        divMenyContainer.appendChild(div);
+            div.appendChild(overskrift);
+            div.appendChild(text);
+            div.appendChild(price);
+            div.appendChild(btnDivColector);
+
+            btnDivColector.appendChild(addBtn);
+            btnDivColector.appendChild(removeBtn);
+
+            divMenyContainer.appendChild(div);
+        }
     }
 
 
